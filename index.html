@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoaib Ali Portfolio</title>
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">Shoaib Ali</a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="bx bx-moon" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Shoaib Ali</h1>
+        <p>Front-end developer based in California</p>
+
+        <div class="social-media">
+          <a href="https://github.com/Shoaibali12392" target="'_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/shoaib-ali-5904521b2/"
+            target="'_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+
+        <a href="images/Shoaib_Resume.pdf" target="_blank" class="btn">View CV</a>
+      </div>
+
+      <div class="profession-container">
+        <div class="profession-box">
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>Front-End Developer</h3>
+          </div>
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>Front-End Developer</h3>
+          </div>
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>Front-End Developer</h3>
+          </div>
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>Front-End Developer</h3>
+          </div>
+          <div class="circle"></div>
+        </div>
+
+        <div class="overlay"></div>
+      </div>
+
+      <!-- <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div> -->
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about.png" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>
+          Hello, I'm Shoaib Ali, a passionate front-end developer dedicated to
+          crafting visually appealing and user-friendly web experiences. With a
+          keen eye for design and a love for clean code, I thrive on
+          transforming creative ideas into functional and engaging websites. I
+          am proficient in a range of Front-end technologies such as HTML, CSS,
+          Javscript, React, Bootstrap and more.
+        </p>
+      </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/fitness.png" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Fitness App</h4>
+            <p>
+              A fitness app to help both new and experienced gym goers find
+              exercises that fit their needs. Users are able to search specific
+              exercises as well as browse exercises sorted by muscle groups.
+              <br />
+              <strong>React and API</strong>
+            </p>
+            <a href="https://sa-fitness.netlify.app/" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/starbucks.png" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Starbucks Clone</h4>
+            <p>
+              A clone of the Starbuck website. <br />
+              <strong>HTML, CSS and JavaScript</strong>.
+            </p>
+            <a href="https://starbucks-clone-sa.netlify.app/" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="https://formspree.io/f/xqkvjokp" method="POST">
+        <div class="input-box">
+          <input
+            type="text"
+            name="Full Name"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text"></div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
