@@ -339,17 +339,22 @@ span {
 
 .portfolio .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
 
 .portfolio-container .portfolio-box {
+  grid-column: span 2;
   position: relative;
   display: flex;
   border-radius: 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
+}
+
+.portfolio-container .portfolio-box:nth-last-child(1):nth-child(odd) {
+	grid-column: 2 / span 2;
 }
 
 .portfolio-box img {
