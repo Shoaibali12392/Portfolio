@@ -594,6 +594,10 @@ span {
   .portfolio .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .portfolio-container .portfolio-box:nth-last-child(1):nth-child(odd) {
+    grid-column: 1/ span 2;
+  }
+  
 }
 
 @media (max-width: 780px) {
